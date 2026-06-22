@@ -122,8 +122,8 @@ comments:
   giscus:
     repo: "iliyz/chirpyblog"
     repo_id: "R_kgDOSq8fPQ"
-    category:
-    category_id:
+    category: "Announcements"
+    category_id: "DIC_kwDOSq8fPc4C_q8x"
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
