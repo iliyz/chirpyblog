@@ -120,8 +120,8 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
+    repo: "iliyz/chirpyblog"
+    repo_id: "R_kgDOSq8fPQ"
     category:
     category_id:
     mapping: # optional, default to 'pathname'
