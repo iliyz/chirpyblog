@@ -32,3 +32,14 @@ div.highlight pre,
   word-break: break-all !important; /* 面对极长的哈希值或URL，直接暴力折断 */
   overflow-x: hidden !important; /* 彻底封杀代码块横向滚动条 */
 }
+
+/* 侧边栏背景图片添加 */
+#sidebar {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+    url("https://cdn.jsdelivr.net/gh/huanyushi/blog-images@main/img/background2.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
