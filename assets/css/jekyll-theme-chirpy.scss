@@ -1,0 +1,34 @@
+---
+---
+@import 'main';
+
+/* ==========================================
+   自定义 CSS 区域 (终极换行升级版)
+   ========================================== */
+
+/* 1. 强制表格内容自动换行 */
+.table-wrapper {
+  overflow-x: hidden !important; /* 彻底封杀表格外层的横向滚动条 */
+}
+.table-wrapper table {
+  table-layout: fixed !important; /* 强制表格平分布局，不被长文本撑开 */
+  width: 100% !important;
+}
+.table-wrapper table th,
+.table-wrapper table td {
+  white-space: normal !important; /* 彻底覆盖原主题的 nowrap */
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important; 
+  word-break: normal !important; /* 允许换行，但尽量保持英文单词完整 */
+}
+
+/* 2. 强制代码块自动换行 */
+div.highlighter-rouge pre,
+div.highlight pre,
+.highlight pre code {
+  white-space: pre-wrap !important; /* 核心魔法：保留代码缩进的同时允许折行 */
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-all !important; /* 面对极长的哈希值或URL，直接暴力折断 */
+  overflow-x: hidden !important; /* 彻底封杀代码块横向滚动条 */
+}
