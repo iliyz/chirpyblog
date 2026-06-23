@@ -1,0 +1,28 @@
+@import "jekyll-theme-chirpy";
+
+/* ==========================================
+   自定义 CSS 区域
+   ========================================== */
+
+/* 1. 强制表格内容自动换行，消除横向滚动条 */
+.table-wrapper {
+  overflow-x: visible !important; /* 允许内容溢出包裹层 */
+}
+.table-wrapper table {
+  table-layout: fixed !important; /* 强制表格遵循容器宽度，防止被撑开 */
+  width: 100% !important;
+}
+.table-wrapper table td,
+.table-wrapper table th {
+  white-space: normal !important; /* 允许文本正常换行 */
+  word-wrap: break-word !important; /* 长单词允许内部截断换行 */
+  word-break: break-word !important; 
+}
+
+/* 2. 强制代码块自动换行，消除横向滚动条 */
+.highlight pre,
+.highlight code {
+  white-space: pre-wrap !important; /* 保留代码空格，但允许到达边缘时换行 */
+  word-wrap: break-word !important;
+  word-break: break-all !important; /* 强制极长的连续字符（如URL或哈希值）断开 */
+}
