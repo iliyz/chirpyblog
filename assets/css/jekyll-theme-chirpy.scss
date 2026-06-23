@@ -1,6 +1,7 @@
 ---
 ---
 @import 'main';
+@use "card-hover";
 
 /* ==========================================
    自定义 CSS 区域 (终极换行升级版)
@@ -42,4 +43,27 @@ div.highlight pre,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+/* 侧边栏样式设置 */
+#sidebar{
+  .site-title,
+  .site-subtitle,
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .site-title {
+    transition: color 0.2s ease;
+    &:hover {
+      color: #f6d6a0;
+    }
+  }
+
+  ul li.nav-item > a.nav-link {
+    transition: transform 0.2s ease, color 0.2s ease;
+    &:hover {
+      transform: translateX(4px);
+    }
+  }
 }
